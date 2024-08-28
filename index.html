@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos by NASA's Rovers'</title>
+    <style>
+        /* To remove number incrementor and decremtor */
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #input {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            outline: none;
+        }
+
+        #btn {
+            width: 50px;
+            height: 36px;
+            font-size: 18px
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            display: none;
+        }
+        .gettingImage {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>NASA's Curiosity, Opportunity, and Spirit rovers went on Mars to collect some photos <br>There are 856 photos
+        that those rovers captured<br>
+        Write a number between 1 to 856 to get the corresponding photo captured by NASA's rovers</h2>
+        
+    <div>
+        <input id="input" type="number">
+        <button id="btn">Get</button>
+    </div>
+    <h2 class="gettingImage">Getting image...</h2>
+    <div>
+        <img src="" alt="">
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
